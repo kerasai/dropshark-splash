@@ -1,0 +1,230 @@
+body {
+    background-color: #2aa9e0;
+    color: #ffffff;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+#nav {
+    background-color: #232323;
+    font-size: 18px;
+    font-weight: 500;
+    height: 45px;
+    position: fixed;
+    text-transform: uppercase;
+    transition: background 0.1s;
+    width: 100%;
+    z-index: 9999;
+}
+
+.primary-nav {
+    background-color: #232323;
+    max-height: 45px;
+    margin: 0 0 0 auto;
+    overflow: hidden;
+    transition: max-height 0.4s;
+    width: 180px;
+}
+
+.primary-nav.nav-expanded {
+    max-height: 275px;
+}
+
+#nav .primary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav .primary-nav li {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+#nav .primary-nav a {
+    display: block;
+    color: #ffffff;
+    font-weight: 700;
+    padding: .5em;
+}
+
+#nav .primary-nav a:hover {
+    text-decoration: none;
+}
+
+#nav .logo {
+    top: 4px;
+    left: 4px;
+    position: absolute;
+}
+
+#nav .logo a {
+    background: url('dropshark_head.png') no-repeat;
+    display: block;
+    height: 37px;
+    text-indent: -9999px;
+    transition: background 0.1s;
+    width: 190px;
+}
+
+#graphic {
+    padding-top: 45px;
+    background: url('warroom.png') #232323 no-repeat center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+#graphic h1, h2, h3 {
+    color: #ffffff;
+    margin-top: 0;
+    text-align: center;
+}
+
+#graphic h1 {
+    margin: 0 0 1em;
+    text-indent: -9999px;
+    background: url('dropshark_sm.png') no-repeat center;
+    height: 169px;
+}
+
+#graphic h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#graphic h3 {
+    font-size: 32px;
+}
+
+#graphic .btn {
+    margin: 1em 0 2em;
+}
+
+#main {
+}
+
+#home-blocks {
+    background-color: #ffffff;
+    color: #232323;
+}
+
+#home-blocks .item {
+    margin: 2em 0;
+}
+
+#home-blocks .item  h3 {
+    color: #2aa9e0;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#home-blocks .item  p {
+    margin: 0 auto 1.5em;
+    max-width: 300px;
+}
+
+#info-blocks {
+    background-color: #232323;
+    color: #ffffff;
+    padding: 2em 1em;
+}
+
+#info-blocks .container {
+    max-width: 800px;
+}
+
+#info-blocks .item:not(:last-child) {
+    margin-bottom: 3em;
+}
+
+#footer {
+    margin-top: 1em;
+    text-shadow:  2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#footer .btn {
+    margin: 1em 0;
+}
+
+#footer .col {
+    margin: auto;
+    max-width: 400px;
+}
+
+#footer ul.footer-nav {
+    list-style: none;
+    width: 100%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #nav, .primary-nav {
+        background-color: transparent;
+    }
+
+    .scrolled #nav, .scrolled .primary-nav {
+        background-color: #232323;
+    }
+
+    .primary-nav {
+        padding: 0 80px 0 200px;
+        width: 100%;
+    }
+
+    .primary-nav .menu-toggle {
+        display: none;
+    }
+
+    #nav .primary-nav li {
+        float: left;
+        text-align: center;
+        width: 25%;
+    }
+
+    #nav li.login {
+        background-color: #2aa9e0;
+        color: #ffffff;
+        height: 45px;
+        max-width: 80px;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .login a {
+        color: #ffffff;
+        display: block;
+        height: 45px;
+        padding-top: 10px;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    #footer .col {
+        max-width: none;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .primary-nav {
+        padding-right: 150px;
+    }
+
+    #nav li.login {
+        max-width: 150px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
