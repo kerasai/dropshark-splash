@@ -65,7 +65,7 @@ body {
 }
 
 #nav .logo a {
-    background: url('dropshark_head.png') no-repeat;
+    background: url('assets/img/dropshark_head.png') no-repeat;
     display: block;
     height: 37px;
     text-indent: -9999px;
@@ -75,7 +75,7 @@ body {
 
 #graphic {
     padding-top: 45px;
-    background: url('warroom.png') #232323 no-repeat center;
+    background: url('assets/img/warroom.png') #232323 no-repeat center;
     background-size: cover;
     min-height: 400px;
 }
@@ -89,7 +89,7 @@ body {
 #graphic h1 {
     margin: 0 0 1em;
     text-indent: -9999px;
-    background: url('dropshark_sm.png') no-repeat center;
+    background: url('assets/img/dropshark_sm.png') no-repeat center;
     height: 169px;
 }
 
