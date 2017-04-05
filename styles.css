@@ -151,17 +151,40 @@ body {
 }
 
 #footer .btn {
+    color: black;
     margin: 1em 0;
 }
 
-#footer .col {
+#footer a {
+    color: white;
+}
+
+#footer .contact {
     margin: auto;
     max-width: 400px;
 }
 
 #footer ul.footer-nav {
     list-style: none;
+    margin-bottom: 1em;
+    padding: 0;
     width: 100%;
+}
+
+#footer ul.footer-nav > li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 33.3%;
+}
+
+#footer .finn {
+    background: url('assets/img/finn.png') no-repeat center;
+    background-size: contain;
+    display: block;
+    height: 50px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -208,8 +231,13 @@ body {
         text-decoration: none;
     }
 
-    #footer .col {
-        max-width: none;
+    #footer .contact {
+        max-width: 720px;
+    }
+
+    #footer ul.footer-nav {
+        max-width: 50%;
+        margin-left: 25%;
     }
 }
 
