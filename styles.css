@@ -164,6 +164,16 @@ body {
     max-width: 400px;
 }
 
+#footer .contact select {
+    float: right;
+    width: 80px;
+}
+
+#footer .contact input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
 #footer ul.footer-nav {
     list-style: none;
     margin-bottom: 1em;

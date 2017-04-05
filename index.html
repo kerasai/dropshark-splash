@@ -136,13 +136,22 @@
                     <div class="col col-sm-6">
                         <h3>Contact Us</h3>
                         <p>Would you like more information? Send a message we'll get right back to you.</p>
+                        <p>Also be sure to join the DropShark mailing list in order to receive news and updates about the DropShark service.</p>
                     </div>
                     <div class="col col-sm-6">
-                        <label for="edit-mail">Email Address  <span class="asterisk">*</span></label>
-                        <input type="email" value="" name="EMAIL" id="edit-mail" class="form-control">
-                        <label for="edit-message">Message  <span class="asterisk">*</span></label>
-                        <textarea class="form-control" id="edit-message"></textarea>
-                        <p><a href="#" class="btn btn-default">Send</a></p>
+                        <form action="https://docs.google.com/a/dropshark.io/forms/d/e/1FAIpQLSfWcSAnzGIEd5ZJQHwXMaJHV1D9qBqQ9Mp-R-AUdwQMKtz1bg/formResponse?redirect=dropshark.io" method="POST">
+                            <p><input type="text" value="" name="entry.2101644447" id="edit-name" class="form-control" placeholder="Name (required)"></p>
+                            <p><input type="email" value="" name="entry.1238190271" id="edit-mail" class="form-control" placeholder="Email Address (required)"></p>
+                            <p><textarea class="form-control" name="entry.1236166067" id="edit-message" placeholder="Message"></textarea></p>
+                            <p>
+                                <label for="edit-subscribe">Join mailing list</label>
+                                <select name="entry.1870442676" class="form-control" id="edit-subscribe">
+                                    <option selected="selected">Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </p>
+                            <p><input class="btn btn-default" type="submit" value="Submit"></p>
+                        </form>
                     </div>
                 </div>
                 <div class="row">
@@ -156,7 +165,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="text-center finn"></div>
+                        <div class="text-center"><p class="finn"></p></div>
                         <div class="text-center">
                             <p>&copy; 2017 Kerasai, Ltd. All rights reserved.</p>
                         </div>
