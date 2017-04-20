@@ -74,7 +74,7 @@ body {
 }
 
 #graphic {
-    padding-top: 45px;
+    padding: 4.5em 0 1em;
     background: url('assets/img/servers.jpg') #232323 no-repeat center;
     background-size: cover;
     min-height: 400px;
@@ -113,6 +113,7 @@ body {
 #home-blocks {
     background-color: #ffffff;
     color: #232323;
+    text-align: center;
 }
 
 #home-blocks .item {
@@ -135,14 +136,29 @@ body {
     background-color: #232323;
     color: #ffffff;
     padding: 2em 1em;
+    text-align: justify;
 }
 
 #info-blocks .container {
     max-width: 800px;
 }
 
-#info-blocks .item:not(:last-child) {
-    margin-bottom: 3em;
+#info-blocks .item {
+    border-bottom: 1px solid gray;
+    margin: 2em 0;
+    padding: 0 0 2em;
+}
+
+#info-blocks img {
+    max-width: 100%;
+}
+
+#info-blocks .item:last-of-type {
+    border: none;
+}
+
+#info-blocks .btn {
+    margin-top: 2em;
 }
 
 #footer {
@@ -205,6 +221,7 @@ body {
 
     .scrolled #nav, .scrolled .primary-nav {
         background-color: #232323;
+        border-bottom: 1px solid black;
     }
 
     .primary-nav {
