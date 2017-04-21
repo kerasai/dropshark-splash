@@ -77,47 +77,59 @@ body {
     padding: 4.5em 0 1em;
     background: url('assets/img/servers.jpg') #232323 no-repeat center;
     background-size: cover;
-    min-height: 400px;
-}
-
-#graphic h1, h2, h3 {
-    color: #ffffff;
-    margin-top: 0;
     text-align: center;
 }
 
+#graphic.home {
+    min-height: 400px;
+}
+
+#graphic h1, #graphic h2, #graphic h3 {
+    color: #ffffff;
+}
+
 #graphic h1 {
+    display: inline-block;
+    padding-left: 100px;
+    padding-top: 8px;
+    background: url('assets/img/dropshark_sm_fin.png') no-repeat left;
+    height: 65px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+#graphic.home h1 {
     margin: 0 0 1em;
     text-indent: -9999px;
     background: url('assets/img/dropshark_sm.png') no-repeat center;
     height: 169px;
+    display: block;
 }
 
 #graphic h2 {
     font-size: 48px;
     font-weight: 900;
+    margin-top: 0;
     text-transform: uppercase;
 }
 
 #graphic h3 {
     font-size: 32px;
+    margin-top: 0;
 }
 
 #graphic .btn {
     margin: 1em 0 2em;
 }
 
-#main {
-}
-
-#home-blocks {
+#main, #home-blocks {
     background-color: #ffffff;
     color: #232323;
-    text-align: center;
 }
 
 #home-blocks .item {
     margin: 2em 0;
+    text-align: center;
 }
 
 #home-blocks .item  h3 {
@@ -149,7 +161,12 @@ body {
     padding: 0 0 2em;
 }
 
+#info-blocks h3 {
+    margin-top: 0;
+}
+
 #info-blocks img {
+    margin-bottom: 1em;
     max-width: 100%;
 }
 
