@@ -1,17 +1,23 @@
 (function ($) {
+    var $body = $('body');
+    var $window = $(window);
 
     $().ready(function() {
-        var $window = $(window);
-        var $body = $('body');
 
         $window.scroll(function (event) {
-            $body.toggleClass('scrolled', $window.scrollTop() != 0);
+            checkScroll();
         });
 
         $(".menu-toggle a").click(function (event) {
             event.preventDefault();
             $(this).parents(".primary-nav").toggleClass('nav-expanded');
         });
+
+        checkScroll();
     });
+
+    function checkScroll() {
+        $body.toggleClass('scrolled', $window.scrollTop() != 0);
+    }
 
 })(jQuery);
